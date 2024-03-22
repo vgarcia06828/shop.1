@@ -6,5 +6,59 @@
 
 {% block content %}
     <!--page content-->
+	
+	
     <h1>Page 1</h1>
+	<h2>Begin shopping!</h2>
+	<br>
+	<div class="container"> 
+	<form action="/p2" method="get"> 
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="top" onclick="myFunction('top')"> Tank Top
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="cargo" onclick="myFunction('cargo')"> Cargo Pants
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="longs" onclick="myFunction('longs')"> Long sleeve shirt
+      </label>
+	  </div>
+	  <br>
+	  <div class="container">
+	  <label class="checkbox-inline">
+	  <label>
+        <input type="checkbox" id="shorts" onclick="myFunction('shorts')"> Short sleeve shirt
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="socks" onclick="myFunction('socks')"> Black-and-white socks
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="hat" onclick="myFunction('hat')"> Stylish hat
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="neck" onclick="myFunction('neck')"> Necklace
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="goldear" onclick="myFunction('goldear')"> Gold earrings
+      </label>
+	  <label class="checkbox-inline">
+        <input type="checkbox" id="silverr" onclick="myFunction('silverr')"> Silver ring
+      </label>
+	  </div>
+	  <h4>Items you have chosen:</h4>
+	  
+	  <!--<label for="myCheck">Checks</label> -->
+
+<p id="top1" style="display:none">Tank Top</p>
+<p id="cargo1" style="display:none">Cargo Pants</p>
+<p id="longs1" style="display:none">Long Sleeve Shirt</p>
+<p id="shorts1" style="display:none">Short Sleeve Shirt</p>
+<p id="socks1" style="display:none">Black and White Socks</p>
+<p id="hat1" style="display:none">Stylish Hat</p>
+<p id="neck1" style="display:none">Necklace</p>
+<p id="silverr1" style="display:none">Silver Ring</p>
+<p id="goldear1" style="display:none">Gold Earring</p>
+
+<input type="submit" value="Submit">
+</form>
 {% endblock %}

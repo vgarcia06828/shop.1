@@ -5,6 +5,13 @@
 {% block title %}Page 2{% endblock %}
 
 {% block content %}
+
+  
     <!--page content-->
-    <h1>Page 2</h1>
+    <h1>Check out</h1>
+	<label for="cdn"><b>Card Number:</b></label>
+    <input type="text" placeholder="0000-0000-0000" name="crdnum" id="cd" required>
+	<button onclick="miFunction()">Complete Check Out</button>
+	<p id="demo"></p>
+
 {% endblock %}
